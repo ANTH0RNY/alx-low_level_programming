@@ -1,7 +1,7 @@
-#include "main.H"
+#include "main.h"
 /**
  *print_number -prints n.o
- *
+ *@n: input to function
  *Return: void
  */
 void print_number(int n)
