@@ -4,22 +4,21 @@
  *@s: input to function
  *Return: void
  */
+
 void rev_string(char *s)
 {
-	char h[100];
-	int i, count = 0, hold = 0;
+	int a = 0, b, c;
+	char d;
 
-	while (s[count] != '\0')
+	while (s[a] != '\0')
 	{
-		h[count] = s[count];
-		count++;
+		a++;
 	}
-
-
-	for (i = count - 1; i >= 0; i--)
+	c = a - 1;
+	for (b = 0; c >= 0 && b < c; c--, b++)
 	{
-		s[hold] = h[i];
-		hold++;
+		d = s[b];
+		s[b] = s[c];
+		s[c] = d;
 	}
 }
-
