@@ -9,7 +9,6 @@
 int _strlen(char *s)
 {
 	int count;
-	char *c;
 
 	while (*s != '\0')
 	{
