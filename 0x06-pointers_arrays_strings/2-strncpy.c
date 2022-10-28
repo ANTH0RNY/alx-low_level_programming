@@ -6,24 +6,18 @@
  *@n: input
  *Return: void
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
-	int j;
-	int count = 0;
+int i;
 
-	while (dest[count] != '\0')
+	for (i = 0; i < n && *(src + i); i++)
 	{
-		count++;
+		*(dest + i) = *(src + i);
 	}
-
-
-	j = 0;
-	while (j < n && src[j] != '\0')
+	for (; i < n; i++)
 	{
-		dest[j] = src[j];
-		j++;
+	*(dest + i) = '\0';
 	}
-	dest[j] = '\0';
 	return (dest);
+
 }
