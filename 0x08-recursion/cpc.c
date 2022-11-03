@@ -1,18 +1,22 @@
 #include "main.h"
 /**
- *factorial - get factorial
+ *_sqrt_recursion - get sqrt
  *@n: input number
  *Return: int
+ *
  */
-
-int factorial(int n)
+int _sqrt_recursion(int n)
 {
-	if (n >= 1)
-		return (n * factorial(n - 1));
-	else
+	int i;
+
+	i = 0;
+	while (i < 10000)
 	{
-		if (n < 0)
-			return (-1);
-		return (1);
+		if ((i * i) == n)
+		{
+			return (i);
+		}
+		i++;
 	}
+	return (-1);
 }
