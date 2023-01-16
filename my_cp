@@ -1,0 +1,5 @@
+#!/bin/bash
+for user in "$@"
+do
+cp -RT $user 0x18-dynamic_libraries 
+done
